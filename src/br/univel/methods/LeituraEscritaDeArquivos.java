@@ -18,7 +18,7 @@ public class LeituraEscritaDeArquivos {
 		// 3 - Pega o array de bytes e escreve em num novo arquivo.
 		escreva(new File("Cópia de " + f.getName()), dados);
 	}
-
+ 
 	public byte[] leia(File arq) {
 		Path path = Paths.get(arq.getPath());
 		try {
