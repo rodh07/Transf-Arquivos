@@ -12,6 +12,8 @@ import java.util.Map;
 
 import javax.swing.JOptionPane;
 
+import br.univel.main.TelaConfiguracao;
+
 /**
  * @author Seven
  *
@@ -19,8 +21,13 @@ import javax.swing.JOptionPane;
 public class Servidor implements IServer {
 
 	public static int PORTA = 1818;
+	public static String nome_ap= "";
 	
 	
+	public Servidor(TelaConfiguracao tela) {
+		// TODO Auto-generated constructor stub
+	}
+
 	//testes
 	public void run() {
 		try {

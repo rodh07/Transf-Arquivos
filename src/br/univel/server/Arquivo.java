@@ -14,7 +14,6 @@ public class Arquivo implements Serializable  {
 	private long tamanho;
 
 	private String md5;
-
 	private Date dataHoraModificacao;
 
 	
