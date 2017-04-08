@@ -51,7 +51,11 @@ public class Servidor implements IServer {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public List<String> procurarArquivo(String query, TipoFiltro tipoFiltro, String filtro)
+=======
+	public Map<Cliente, List<Arquivo>> procurarArquivo(String query, TipoFiltro tipoFiltro, String filtro)
+>>>>>>> branch 'master' of https://github.com/rodh07/Transf-Arquivos-JShared.git
 			throws RemoteException {
 		return null;
 	}

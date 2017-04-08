@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package br.univel.table;
 
 import java.rmi.RemoteException;
@@ -48,4 +49,17 @@ public class TableMConexao extends AbstractTableModel{
 	public List<IServer> getConexoes() {
 		return conexoes;
 	}
+=======
+/**
+ * 
+ */
+package br.univel.table;
+
+/**
+ * @author Seven
+ *
+ */
+public class TableMConexao {
+
+>>>>>>> branch 'master' of https://github.com/rodh07/Transf-Arquivos-JShared.git
 }

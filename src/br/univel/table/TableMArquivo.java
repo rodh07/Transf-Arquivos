@@ -3,6 +3,7 @@
  */
 package br.univel.table;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
@@ -42,4 +43,12 @@ public class TableMArquivo extends AbstractTableModel{
 	public String getColumnName(int column) {
 		return columns[column];
 	}
+=======
+/**
+ * @author Seven
+ *
+ */
+public class TableMArquivo {
+
+>>>>>>> branch 'master' of https://github.com/rodh07/Transf-Arquivos-JShared.git
 }
