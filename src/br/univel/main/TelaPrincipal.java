@@ -798,7 +798,7 @@ public class TelaPrincipal extends JFrame implements IServer {
 		List<Arquivo> list = new ArrayList<>();
 
 		arquivos.forEach((cliente, value) -> {
-
+ 
 			value.forEach(valor -> {
 				if (TipoFiltro.NOME.equals(tipoFiltro)) {
 					if (valor.getNome().toLowerCase().contains(query.toLowerCase())) {
