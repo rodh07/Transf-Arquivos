@@ -1,4 +1,10 @@
 package br.univel.methods;
+/*
+ * 
+ * Somente para aprendizagem
+ * 
+ * 
+ * package br.univel.methods;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -38,3 +44,5 @@ public class ListarDiretoriosArquivos {
 
 	}
 }
+
+*/

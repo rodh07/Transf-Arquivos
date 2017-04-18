@@ -1,4 +1,4 @@
-package br.univel.server;
+package br.univel.comum;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -17,7 +17,7 @@ public class Arquivo implements Serializable  {
 	private Date dataHoraModificacao;
 
 	
-	private static final String ARQUIVOS = "C:\\Arquivos";
+//	private static final String ARQUIVOS = "C:\\Arquivos";
 	
 	public long getId() {
 		return id;
@@ -65,6 +65,21 @@ public class Arquivo implements Serializable  {
 
 	public void setDataHoraModificacao(Date dataHoraModificacao) {
 		this.dataHoraModificacao = dataHoraModificacao;
+	}
+	
+
+	/**
+	 * @return the path
+	 */
+	public String getPath() {
+		return path;
+	}
+
+	/**
+	 * @param path the path to set
+	 */
+	public void setPath(String path) {
+		this.path = path;
 	}
 
 	@Override
@@ -124,7 +139,7 @@ public class Arquivo implements Serializable  {
 	
 	public enum PathDir{
 		
-		ARQUIVOS("C:\\Arquivos");
+		ARQUIVOS("C:\\Shared");
 		
 		public String path;
 		
@@ -138,5 +153,10 @@ public class Arquivo implements Serializable  {
 		}
 	
 	}
+
+	/**
+	 * @return
+	 */
+	
 
 }

@@ -1,4 +1,4 @@
-package br.univel.server;
+package br.univel.comum;
 
 import java.io.Serializable;
 
@@ -9,11 +9,28 @@ import java.io.Serializable;
 public class Cliente implements Serializable {
 
 	private static final long serialVersionUID = 3454261032738515454L;
-	
+
 	private long id;
 	private String nome;
 	private String ip;
 	private int porta;
+
+	/**
+	 * @param nomeCliente
+	 * @param ipCliente
+	 * @param intPortaCliente
+	 */
+	/**
+	 * @param id
+	 */
+	public Cliente() {
+		super();
+		
+//		this.nome = nome;
+//		this.ip = ip;
+//		this.porta = porta;
+		
+	}
 
 	public long getId() {
 		return id;

@@ -1,4 +1,4 @@
-package br.univel.server;
+package br.univel.comum;
 
 public enum TipoFiltro {
 	NOME("NOME_ARQUIVO"),

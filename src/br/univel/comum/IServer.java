@@ -1,4 +1,4 @@
-package br.univel.server;
+package br.univel.comum;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface IServer extends Remote {
 
-	public static final String NOME_SERVICO = "JShare";
+	public static final String NOME_SERVICO = "JShared";
 
 	/**
 	 * Recebe informações de um novo cliente.
@@ -33,7 +33,7 @@ public interface IServer extends Remote {
 	 * os resultados em cada cliente.
 <<<<<<< HEAD
 	 */
-	public List<String> procurarArquivo(String query, TipoFiltro tipoFiltro, String filtro)
+	public Map<Cliente, List<Arquivo>> procurarArquivo(String query, TipoFiltro tipoFiltro)
 			throws RemoteException;
 
 	/**
@@ -51,33 +51,4 @@ public interface IServer extends Remote {
 	/**
 	 * @return
 	 */
-=======
-	 * 
-	 * @param nome
-	 * @return
-	 * @throws RemoteException
-	 */
-	public Map<Cliente, List<Arquivo>> procurarArquivo(String query, TipoFiltro tipoFiltro, String filtro)
-			throws RemoteException;
-
-	/**
-	 * Recebe informações do arquivo e retorna o arquivo em formato
-	 * de array de bytes. 
-	 * 
-	 * @param arq
-	 * @return
-	 * @throws RemoteException
-	 */
-	public byte[] baixarArquivo(Cliente cli, Arquivo arq) throws RemoteException;
-
-	/**
-	 * Desconecta o cliente, tornando também indisponível seus arquivos
-	 * para as buscas. 
-	 * 
-	 * @param c
-	 * @throws RemoteException
-	 */
-	public void desconectar(Cliente c) throws RemoteException;
->>>>>>> branch 'master' of https://github.com/rodh07/Transf-Arquivos-JShared.git
-
 }
